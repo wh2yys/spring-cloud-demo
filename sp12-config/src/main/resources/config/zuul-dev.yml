@@ -1,4 +1,10 @@
 spring:
+  cloud:
+    inetutils:
+      ignored-interfaces:
+        - VM.*
+      preferred-networks:
+        - 192.168.182
   application:
     name: zuul
   rabbitmq:

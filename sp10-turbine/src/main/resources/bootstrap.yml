@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    inetutils:
+      ignored-interfaces:
+        - VM.*
+      preferred-networks:
+        - 192.168.214
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
